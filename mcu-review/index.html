@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>单片机项目复盘 · MCU Dev Review</title>
+  <meta name="description" content="单片机项目开发复盘与技能树总结 —— 记录从点灯到 RTOS 的成长轨迹。" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2300e5ff'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23061018' font-family='monospace' font-weight='bold'%3EM%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="logo">M</span>
+        <span>MCU REVIEW</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#projects">项目复盘</a></li>
+        <li><a href="#skills">技能树</a></li>
+        <li><a href="#notes">复盘笔记</a></li>
+        <li><a href="#roadmap">后续规划</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="chip"><span class="dot"></span> SYSTEM ONLINE · 持续更新中</div>
+      <h1>单片机项目复盘</h1>
+      <p class="lead">
+        记录从 <code class="inline">GPIO 点灯</code> 到 <code class="inline">FreeRTOS 多任务</code>
+        的每一次迭代，梳理项目背后的技能树，把踩过的坑变成可复用的经验。
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">查看项目复盘 →</a>
+        <a href="#skills" class="btn btn-ghost">浏览技能树</a>
+      </div>
+
+      <!-- 统计 -->
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <!-- 项目复盘 -->
+    <section id="projects">
+      <div class="section-head">
+        <div class="eyebrow">// 01 · PROJECTS</div>
+        <h2>项目复盘</h2>
+        <p>每个项目都是一次完整的「需求 → 设计 → 实现 → 调试」闭环。这里记录关键收获与技术栈，后续可点击进入独立详情页。</p>
+      </div>
+      <div class="projects" id="projects-grid"></div>
+    </section>
+
+    <!-- 技能树 -->
+    <section id="skills">
+      <div class="section-head">
+        <div class="eyebrow">// 02 · SKILL TREE</div>
+        <h2>技能树</h2>
+        <p>按方向归类的技能掌握度，点击分类展开子技能与常用工具。百分比为自评，后续结合项目经历动态校准。</p>
+      </div>
+      <div class="skill-tree" id="skill-tree"></div>
+    </section>
+
+    <!-- 复盘笔记 -->
+    <section id="notes">
+      <div class="section-head">
+        <div class="eyebrow">// 03 · NOTES</div>
+        <h2>复盘笔记</h2>
+        <p>那些让我卡过几小时、最后恍然大悟的瞬间。教训比成功更值得记录。</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- 后续规划 -->
+    <section id="roadmap">
+      <div class="section-head">
+        <div class="eyebrow">// 04 · ROADMAP</div>
+        <h2>后续规划</h2>
+        <p>当前为 v1 静态版本，内容与功能将持续迭代。</p>
+      </div>
+      <div class="roadmap" id="roadmap-grid"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span class="mono">while(1) { review(); learn(); build(); }</span><br />
+      © <span id="year"></span> MCU Dev Review · 用代码记录成长
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
